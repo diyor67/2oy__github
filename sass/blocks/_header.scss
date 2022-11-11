@@ -1,0 +1,105 @@
+.site-header__inner{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px ;
+  padding: 73px ;
+  justify-content: space-between;
+  background-color: #014E56;
+}
+
+.site-header__box{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  text-decoration: none;
+
+}
+.navbar__box{
+  margin-left: 80px;
+}
+
+.navbar__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+.navbar__link  {
+  margin-right: 40px;
+}
+
+.right{
+  margin-right: 0;
+}
+
+.navbar__link{
+  font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+text-decoration: none;
+transition: all 0.5s ease;
+
+&:hover{
+  color: #F67E7E;
+}
+}
+
+.site-header__link{
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 33px  ;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  transition: all 0.5s ease;
+
+  &:hover{
+    color: #002529;
+    background-color: #FFFFFF;
+
+  }
+}
+
+.site-header__btn{
+  display: none;
+  border-image: url('../../images/menu-mobile.svg');
+  width: 20px;
+  height: 17px;
+  border: none;
+}
+
+@media only screen and (max-width:768px) {
+  .site-header__inner{
+    padding: 64px ;
+  }
+}
+
+
+@media only screen and (max-width:576px) {
+  
+  .site-header__inner{
+    margin: 0 auto;
+    width: 100%;
+  max-width: 375px; 
+    padding: 56px;
+  }
+
+
+  .navbar{
+    display: none;
+  }
+  .site-header__link{
+    display: none;
+  }
+
+  .site-header__btn{
+    display: block;
+  }
+}
